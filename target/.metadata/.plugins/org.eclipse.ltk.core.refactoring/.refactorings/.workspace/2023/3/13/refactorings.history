@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;010Packed_Vs_NonPacked&apos;" deleteContents="true" description="Delete resource &apos;010Packed_Vs_NonPacked&apos;" element1="/010Packed_Vs_NonPacked" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1680005995867"/>
+</session>

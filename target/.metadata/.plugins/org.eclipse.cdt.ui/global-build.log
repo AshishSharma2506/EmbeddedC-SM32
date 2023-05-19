@@ -1,0 +1,128 @@
+00:49:56 **** Build of configuration Debug for project 001HelloWorld ****
+make -j8 all 
+arm-none-eabi-size   001HelloWorld.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3764	    108	   1588	   5460	   1554	001HelloWorld.elf
+Finished building: default.size.stdout
+ 
+00:50:01 **** Incremental Build of configuration Debug for project 001HelloWorld ****
+make -j8 all 
+arm-none-eabi-size   001HelloWorld.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3764	    108	   1588	   5460	   1554	001HelloWorld.elf
+Finished building: default.size.stdout
+ 
+00:53:01 **** Incremental Build of configuration Debug for project 014StringVsStringLiteral ****
+make -j8 all 
+arm-none-eabi-size   014StringVsStringLiteral.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5472	    108	   1588	   7168	   1c00	014StringVsStringLiteral.elf
+Finished building: default.size.stdout
+ 
+01:37:17 **** Incremental Build of configuration Debug for project 014StringVsStringLiteral ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "014StringVsStringLiteral.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\014StringVsStringLiteral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014StringVsStringLiteral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014StringVsStringLiteral.elf
+ 
+arm-none-eabi-size   014StringVsStringLiteral.elf 
+arm-none-eabi-objdump -h -S  014StringVsStringLiteral.elf  > "014StringVsStringLiteral.list"
+   text	   data	    bss	    dec	    hex	filename
+   5604	    108	   1588	   7300	   1c84	014StringVsStringLiteral.elf
+Finished building: default.size.stdout
+ 
+Finished building: 014StringVsStringLiteral.list
+ 
+01:54:51 **** Incremental Build of configuration Debug for project 014StringVsStringLiteral ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "014StringVsStringLiteral.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\014StringVsStringLiteral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014StringVsStringLiteral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014StringVsStringLiteral.elf
+ 
+arm-none-eabi-size   014StringVsStringLiteral.elf 
+arm-none-eabi-objdump -h -S  014StringVsStringLiteral.elf  > "014StringVsStringLiteral.list"
+   text	   data	    bss	    dec	    hex	filename
+   5612	    108	   1588	   7308	   1c8c	014StringVsStringLiteral.elf
+Finished building: default.size.stdout
+ 
+Finished building: 014StringVsStringLiteral.list
+ 
+11:40:04 **** Build of configuration Debug for project 013Keypad ****
+make -j8 all 
+arm-none-eabi-size   013Keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad.elf
+Finished building: default.size.stdout
+ 
+16:33:14 **** Build of configuration Debug for project 015LED_toggle_with_macros ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "015LED_toggle_with_macros.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\015LED_toggle_with_macros\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015LED_toggle_with_macros.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015LED_toggle_with_macros.elf
+ 
+arm-none-eabi-size   015LED_toggle_with_macros.elf 
+arm-none-eabi-objdump -h -S  015LED_toggle_with_macros.elf  > "015LED_toggle_with_macros.list"
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1568	   2364	    93c	015LED_toggle_with_macros.elf
+Finished building: default.size.stdout
+ 
+Finished building: 015LED_toggle_with_macros.list
+ 
+16:33:21 **** Incremental Build of configuration Debug for project 015LED_toggle_with_macros ****
+make -j8 all 
+arm-none-eabi-size   015LED_toggle_with_macros.elf 
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1568	   2364	    93c	015LED_toggle_with_macros.elf
+Finished building: default.size.stdout
+ 
+16:33:54 **** Incremental Build of configuration Debug for project 015LED_toggle_with_macros ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "015LED_toggle_with_macros.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\015LED_toggle_with_macros\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015LED_toggle_with_macros.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015LED_toggle_with_macros.elf
+ 
+arm-none-eabi-size   015LED_toggle_with_macros.elf 
+arm-none-eabi-objdump -h -S  015LED_toggle_with_macros.elf  > "015LED_toggle_with_macros.list"
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1568	   2364	    93c	015LED_toggle_with_macros.elf
+Finished building: default.size.stdout
+ 
+Finished building: 015LED_toggle_with_macros.list
+ 
+01:22:00 **** Build of configuration Debug for project 013Keypad ****
+make -j8 all 
+arm-none-eabi-size   013Keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad.elf
+Finished building: default.size.stdout
+ 
+01:24:42 **** Incremental Build of configuration Debug for project 013Keypad ****
+make -j8 all 
+arm-none-eabi-size   013Keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad.elf
+Finished building: default.size.stdout
+ 
+01:25:11 **** Incremental Build of configuration Debug for project 013Keypad ****
+make -j8 all 
+arm-none-eabi-size   013Keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad.elf
+Finished building: default.size.stdout
+ 
+01:28:20 **** Build of configuration Debug for project 013Keypad2 ****
+make -j8 all 
+arm-none-eabi-gcc -o "013Keypad2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\013Keypad2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013Keypad2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 013Keypad2.elf
+ 
+arm-none-eabi-size   013Keypad2.elf 
+arm-none-eabi-objdump -h -S  013Keypad2.elf  > "013Keypad2.list"
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 013Keypad2.list
+ 

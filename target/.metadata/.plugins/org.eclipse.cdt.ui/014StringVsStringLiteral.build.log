@@ -1,0 +1,17 @@
+01:54:51 **** Incremental Build of configuration Debug for project 014StringVsStringLiteral ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "014StringVsStringLiteral.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\014StringVsStringLiteral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014StringVsStringLiteral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014StringVsStringLiteral.elf
+ 
+arm-none-eabi-size   014StringVsStringLiteral.elf 
+arm-none-eabi-objdump -h -S  014StringVsStringLiteral.elf  > "014StringVsStringLiteral.list"
+   text	   data	    bss	    dec	    hex	filename
+   5612	    108	   1588	   7308	   1c8c	014StringVsStringLiteral.elf
+Finished building: default.size.stdout
+ 
+Finished building: 014StringVsStringLiteral.list
+ 
+
+01:54:52 Build Finished. 0 errors, 0 warnings. (took 429ms)
+

@@ -1,0 +1,16 @@
+01:28:20 **** Build of configuration Debug for project 013Keypad2 ****
+make -j8 all 
+arm-none-eabi-gcc -o "013Keypad2.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\013Keypad2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013Keypad2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 013Keypad2.elf
+ 
+arm-none-eabi-size   013Keypad2.elf 
+arm-none-eabi-objdump -h -S  013Keypad2.elf  > "013Keypad2.list"
+   text	   data	    bss	    dec	    hex	filename
+   4504	    108	   1588	   6200	   1838	013Keypad2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 013Keypad2.list
+ 
+
+01:28:20 Build Finished. 0 errors, 0 warnings. (took 555ms)
+

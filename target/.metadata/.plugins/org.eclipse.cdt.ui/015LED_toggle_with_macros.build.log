@@ -1,0 +1,17 @@
+16:33:54 **** Incremental Build of configuration Debug for project 015LED_toggle_with_macros ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "015LED_toggle_with_macros.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\015LED_toggle_with_macros\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015LED_toggle_with_macros.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015LED_toggle_with_macros.elf
+ 
+arm-none-eabi-size   015LED_toggle_with_macros.elf 
+arm-none-eabi-objdump -h -S  015LED_toggle_with_macros.elf  > "015LED_toggle_with_macros.list"
+   text	   data	    bss	    dec	    hex	filename
+    788	      8	   1568	   2364	    93c	015LED_toggle_with_macros.elf
+Finished building: default.size.stdout
+ 
+Finished building: 015LED_toggle_with_macros.list
+ 
+
+16:33:55 Build Finished. 0 errors, 0 warnings. (took 494ms)
+

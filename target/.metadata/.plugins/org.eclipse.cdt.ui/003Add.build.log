@@ -1,0 +1,20 @@
+00:47:44 **** Incremental Build of configuration Debug for project 003Add ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:28:2: warning: "/*" within comment [-Wcomment]
+   28 |  /* Loop forever */
+      |   
+arm-none-eabi-gcc -o "003Add.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\MATLAB 2020a\bin\Study Work\FastBit EBA\Embedded C Beginners\My_workspace\target\003Add\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003Add.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 003Add.elf
+ 
+arm-none-eabi-size   003Add.elf 
+arm-none-eabi-objdump -h -S  003Add.elf  > "003Add.list"
+   text	   data	    bss	    dec	    hex	filename
+   5444	    108	   1588	   7140	   1be4	003Add.elf
+Finished building: default.size.stdout
+ 
+Finished building: 003Add.list
+ 
+
+00:47:45 Build Finished. 0 errors, 1 warnings. (took 503ms)
+
